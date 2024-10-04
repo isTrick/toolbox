@@ -1,8 +1,9 @@
 import { ToolWidgetProps } from "@/types/tool"
+import { widgetStyle } from "@/app/assets/styles/globalStyles"
 
 export default function ToolWidget(props: ToolWidgetProps) {
   return (
-    <div className="bg-neutral-900 border-neutral-600 border p-2 rounded-lg text-neutral-200">
+    <div className={widgetStyle}>
       <img src={props.toolIcon} width="100" alt={`${props.toolName} Icon`} />
       <h3>{props.toolName}</h3>
       <p>{props.toolDescription}</p>
