@@ -1,5 +1,5 @@
-import ToolWidget from "./components/ToolWidget";
-import Header from "./components/Header";
+import ToolWidget from "../components/ToolWidget";
+import Header from "../components/Header";
 
 export default function Home() {
   return (

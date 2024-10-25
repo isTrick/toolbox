@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import Search from "../components/Search";
+import Search from "../../components/Search";
 import { UserProps } from "@/types/user";
 /* import Header from "../components/Header"; */
-import { widgetStyle } from "../assets/styles/globalStyles";
-import User from "../components/User";
-import Error from "../components/Error";
+import { widgetStyle } from "../../assets/styles/globalStyles";
+import User from "../../components/User";
+import Error from "../../components/Error";
 
 export default function GithubFinder() {
   const [user, setUser] = useState<UserProps | null>(null);

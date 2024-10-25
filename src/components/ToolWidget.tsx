@@ -1,5 +1,5 @@
 import { ToolWidgetProps } from "@/types/tool"
-import { widgetStyle } from "@/app/assets/styles/globalStyles"
+import { widgetStyle } from "@/src/assets/styles/globalStyles"
 import Image from "next/image"
 
 export default function ToolWidget(props: ToolWidgetProps) {
