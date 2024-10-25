@@ -1,4 +1,4 @@
-import { UserProps } from "@/types/user";
+import { UserProps } from "@/src/types/user";
 import Image from "next/image";
 import Link from "next/link";
 import { MdLocationPin } from "react-icons/md";

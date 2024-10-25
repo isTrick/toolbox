@@ -1,4 +1,4 @@
-import { ToolWidgetProps } from "@/types/tool"
+import { ToolWidgetProps } from "@/src/types/tool"
 import { widgetStyle } from "@/src/assets/styles/globalStyles"
 import Image from "next/image"
 
