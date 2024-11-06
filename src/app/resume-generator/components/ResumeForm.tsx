@@ -8,6 +8,7 @@ import BaseDocument from "./BaseDocument";
 import { ResumeData } from "@/src/types/resume";
 import { PDFViewer } from "@react-pdf/renderer";
 import { useState } from "react";
+import FileUpload from "./FileUpload";
 
 export default function ResumeForm() {
   const { register, handleSubmit } = useForm<ResumeData>();
@@ -85,6 +86,7 @@ export default function ResumeForm() {
           achievements={`${userData.achievements}`}
         />
       </PDFViewer>
+      <FileUpload />
     </div>
   );
 }
