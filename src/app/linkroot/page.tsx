@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 type dataSchema = {
@@ -12,15 +11,11 @@ type dataSchema = {
 };
 
 export default function Linkroot() {
-  const [formData, setFormData] = useState<dataSchema>({
-    name: "Name",
-    description: "Description",
-    skill1: "Skill1"
-  });
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, watch } = useForm();
+
+  const formData = watch();
 
   function submitForm(data: dataSchema) {
-    setFormData(data);
     console.log(data);
   }
 
@@ -38,8 +33,8 @@ export default function Linkroot() {
       </form>
       <div>
         <p>{formData.name}</p>
-        <p>Description</p>
-        <p>Skill1</p>
+        <p>{formData.description}</p>
+        <p>{formData.skill1}</p>
       </div>
     </div>
   );
